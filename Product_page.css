@@ -89,8 +89,6 @@
  .sale-products {
     display: flex;
     flex-wrap: wrap; /* Prevent wrapping to keep items in one row */
-    justify-content: flex-start; /* Center-align items */
-    align-items: center;
     margin-top: 20px;
     overflow-x: auto; /* Add horizontal scrolling for smaller screens */
     padding-bottom: 20px; /* Add some padding at the bottom */
