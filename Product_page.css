@@ -86,10 +86,10 @@
   flex-direction: column;
   justify-content: center;
 }
-  .sale-products {
+ .sale-products {
     display: flex;
     flex-wrap: wrap; /* Prevent wrapping to keep items in one row */
-    justify-content: space-between; /* Center-align items */
+    justify-content: flex-start; /* Center-align items */
     align-items: center;
     margin-top: 20px;
     overflow-x: auto; /* Add horizontal scrolling for smaller screens */
@@ -115,7 +115,6 @@
   .sale-products .product img {
     width: 200px;
     height: auto;
-    transition: transform 0.3s ease; /* Smooth zoom transition */
   }
   
   .sale-products .product h3 {
@@ -150,7 +149,7 @@
   footer {
     background-color: #333333; /* Dark background color */
     color: #ffffff; /* White text color */
-    position:relative;
+    position: relative;
     padding: 20px 0; /* Padding for top and bottom */
     text-align: center; /* Center-align text */
     width: 100%; /* Full width */
