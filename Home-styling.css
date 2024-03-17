@@ -1,6 +1,6 @@
 *{
   text-align: center;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 body {
   font-family: 'Arial', sans-serif;
@@ -13,79 +13,28 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif; /* Creative font for headings */
 }
 
-/* Navigation Styles */
-/*
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;  
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333333;
-}
-
-nav ul li:hover {
-  background-color: #f0f0f0; 
-}
-
-
-nav ul li ul {
-  display: none;
-  position: absolute;
-  background-color: #ffffff; 
-
-nav ul li:hover ul {
-  display: block;
-}
-
-nav ul li ul li {
-  display: block;
-}
-*/
-/*
-nav ul li ul {
-  display: none;
-  position: absolute;
-  background-color: #ffffff; 
-}
-
-nav ul li:hover ul {
-  display: block;
-}
-
-nav ul li ul li {
-  display: block;
-}
-*/
 .highlight {
   font-family:'Times New Roman', Times, serif;
   font-size: 35px;
 }
-
 
 .logo img {
   height: 100px; /* Adjust the height of the logo */
   width: auto; /* Ensure the width adjusts proportionally */
   float: left;
 }
+
 .logo:hover{
   cursor: pointer;
 }
+
 .banner {
   margin-top: 100px;
   height: 600px;
   background-color:#515151;
   background-blend-mode:lighten;
   background-image: url("bg-img2.jpg");
+  background-repeat:no-repeat;
   background-size: contain;
   font-size: 30px;
   color:#ffffff;
@@ -93,17 +42,17 @@ nav ul li ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure navigation bar is on top of other content */
+  z-index: 100; /* Ensure navigation bar is on top of other content */
   background-color: #ffffff; /* White background */
   height: 100px; /* Set height of navigation bar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for depth effect */
 }
 
 nav ul {
@@ -144,11 +93,6 @@ nav ul li:hover ul {
   display: block;
 }
 
-nav ul li ul li {
-  display: block;
-}
-
-
 /* Featured Products Section */
 .featured-products {
   display: flex;
@@ -168,10 +112,9 @@ nav ul li ul li {
   text-align: center;
   cursor: pointer;
   margin: 0 10px; /* Add some spacing between products */
-  padding-bottom:20px;
   padding: 20px; /* Add padding to create space around text */
   border: 1px solid #dddddd; /* Add border for styling */
-  border-radius: 5px; /* Add border radius for rounded corners */
+  border-radius: 10px; /* Add border radius for rounded corners */
   background-color: #ffffff; /* White background */
   position: relative; /* Position relative for absolute positioning of button */
 }
@@ -223,10 +166,12 @@ nav ul li ul li {
   justify-content: space-between;
   align-items: flex-start;
   background-color: #333333;
-  color: #ffffff;
+  color: #f5f5f5;
   padding: 40px;
 }
-
+#product-display img{
+  filter: blur(0.4px);
+}
 .content1,
 .content2 {
   width: 60%; /* Adjust as needed */
@@ -239,7 +184,7 @@ nav ul li ul li {
   text-transform: uppercase;
 }
 
-#product-display ul {
+#product-display ul, #about p {
   list-style-type: none;
   padding-left: 0;
   font-family: 'Times New Roman', Times, serif;
@@ -257,8 +202,7 @@ nav ul li ul li {
   width: 35%; /* Adjust as needed */
   height: auto;
 }
-#about {
-  font-family:Arial, Helvetica, sans-serif;
+#about p {
   font-size:20px;
   line-height: 1.4;
 }
@@ -280,14 +224,15 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #555555; /* Lighten background color on hover */
+  background-color: #555555; /*Lighten background color on hover */
 }
 footer {
   background-color: #333333; /* Dark background color */
   color: #ffffff; /* White text color */
   margin-top: 20px;
-  padding: 20px 0; /* Padding for top and bottom */
+  padding: 15px 0; /* Padding for top and bottom */
   text-align: center; /* Center-align text */
+  vertical-align: center;
   width: 100%; /* Full width */
   bottom: 0; /* Stick to the bottom */
 }
