@@ -30,15 +30,16 @@ h1, h2, h3 {
 
 .banner {
   margin-top: 100px;
-  height: 600px;
-  background-color:#515151;
-  background-blend-mode:lighten;
-  background-image: url("bg-img2.jpg");
-  background-repeat:no-repeat;
+  height: 500px;
+  background-color: rgb(142, 142, 142);
+  background-blend-mode: multiply;
+  background-image: url("bg2.jpeg");
+  background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   font-size: 30px;
-  color:#ffffff;
-  font-family:'Courier New', Courier, monospace;
+  color: #ebebeb;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +111,6 @@ nav ul li:hover ul {
 
 .featured-products .product {
   text-align: center;
-  cursor: pointer;
   margin: 0 10px; /* Add some spacing between products */
   padding: 20px; /* Add padding to create space around text */
   border: 1px solid #dddddd; /* Add border for styling */
@@ -120,14 +120,16 @@ nav ul li:hover ul {
 }
 
 .featured-products .product img {
-  width: 200px;
+  width: 250px;
   height: auto;
-  transition: transform 0.3s ease; /* Smooth zoom transition */
+  /* transition: transform 0.3s ease; */
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-.featured-products .product img:hover {
-  transform: scale(1.1); /* Zoom in on hover */
-}
+/* .featured-products .product img:hover {
+  transform: scale(1.1); 
+} */
 
 
 .featured-products .product h3 {
@@ -226,15 +228,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #555555; /*Lighten background color on hover */
 }
-footer {
+
+ footer {
   background-color: #333333; /* Dark background color */
   color: #ffffff; /* White text color */
-  margin-top: 20px;
-  padding: 15px 0; /* Padding for top and bottom */
+  position: relative;
+  padding: 20px 0; /* Padding for top and bottom */
   text-align: center; /* Center-align text */
-  vertical-align: center;
   width: 100%; /* Full width */
-  bottom: 0; /* Stick to the bottom */
+  top: 30px; /* Stick to the bottom */
 }
 
 footer p {
