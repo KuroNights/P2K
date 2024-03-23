@@ -75,10 +75,11 @@
   }  
   /* Header styling */
 .banner {
-  background-color: rgb(83, 83, 83);
-  color: white;
-  height: 200px;
+  background-color: rgb(169, 209, 212);
+  color: rgb(255, 255, 255);
+  height: 150px;
   font-size: 34px;
+  font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   font-style: italics;
   margin: 0;
@@ -107,9 +108,6 @@
     margin: 10px 0; /* Add some spacing between products */
     padding-bottom:20px;
     padding: 20px; /* Add padding to create space around text */
-    /* border: 1px solid #dddddd; 
-    border-radius: 5px;  */
-    /* background-color: #ffffff; */
     position: relative; /* Position relative for absolute positioning of button */
   }
 
